@@ -20,17 +20,17 @@ JSON_URL = "http://api.coindesk.com/v1/bpi/currentprice/USD.json"
 
 # PICO              AIRLIFT                WIRE
 ###########      ###############     ###############
-# board.GP2 ---> Airlift SCK        --- Green wire
-# board.GP3 ---> Airlift MOSI(TX)   --- Oramge wire
-# board.GP4 ---> Airlift MISO (RX)  --- Yellow Wire
-# board.GP5 ---> Airlift CS         --- Red Wire
-# board.GP6 ---> Airlift BUSY       --- Purple Wire
-# board.GP7 ---> Airlift RST        --- Blue Wire
+# board.GP2 ---> Airlift SCK        --- Green
+# board.GP3 ---> Airlift MOSI(TX)   --- Orange
+# board.GP4 ---> Airlift MISO (RX)  --- Yellow
+# board.GP5 ---> Airlift CS         --- Red
+# board.GP6 ---> Airlift BUSY       --- Purple
+# board.GP7 ---> Airlift RST        --- Blue
 
 # SOURCE
-#   5V -->  VIN AIRLIFT     --- Red wire
-#  GND -->  GND AIRLIFT     --- Black Wire
-#  GND -->  PICO GND        --- White Wire
+#   5V -->  VIN AIRLIFT     --- Red
+#  GND -->  GND AIRLIFT     --- Black
+#  GND -->  PICO GND        --- White
 
 esp32_cs = DigitalInOut(board.GP5)
 esp32_ready = DigitalInOut(board.GP6)
